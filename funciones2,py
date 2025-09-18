@@ -1,0 +1,47 @@
+'''
+crear una funcion llamada menu()
+parametros de entrada: Ninguno
+lo que realiza: muestra un menu y pide al usuario que seleccioneuna opcin.
+valor de retono: la opcion seleccionada
+'''
+def menu(): 
+    print("1. entradas\n2. platos fuertes\3. bebidas\n4. postres\n5. salir")
+    opcion = int;(input("Seleccione una opcion: "))
+    return opcion
+
+def entradas():
+    print("1. pan de bono\t\t$3000")
+    print("2. empanada\t\t$3500")
+
+def fuertes():
+    print("1. bandeja paisa\t\t$25000")
+    print("2. sancocho\t\t$20000")
+
+def bebidas(): 
+    print("1. jugo en agua\t\t$2000")
+    print("2. gaseosa\t\t$3000")
+
+def postres():
+    print("1. tiramisu\t\t$5000")
+    print("2. chesscake\t\t$6000")
+
+# Funcion rincipal 
+def main():
+eleccion= menu()
+print(eleccion)
+
+match(eleccion):
+    case 1:
+        entradas()
+    case 2:
+        fuertes()
+    case 3:
+        bebidas()
+    case 4:
+        postres()
+    case _: 
+        print("opcion no valida")
+
+#aqui se llama a la funcion principal
+if__name_== "_main_":
+    main()
